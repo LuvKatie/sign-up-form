@@ -1,22 +1,23 @@
 @font-face {
-    src: url(../fonts/Norse-Bold.ttf);
-    font-family: Norse;
+    src: url('../fonts/Norse-Bold.ttf');
+    font-family: 'Norse';
 }
 
 body {
     display: flex;
-    height: 100vh;
+    height: 95vh;
+    width: 95vw;
     margin: 0;
     padding: 0;
 }
 
+/* Left Side of the Page */
 #left-side-background {
     position: relative;
 }
 
 #left-side-background > img {
     display: flex;
-    flex-grow: 1;
 
     height: 100vh;
 }
@@ -38,11 +39,92 @@ body {
 }
 
 #left-side-logo img {
-    height: 16vh;
+    height: 75%;
 }
 
-.logo {
+.logo-text {
     color: #DCDCDC;
     font-size: 78px;
-    font-family: Norse;
+    font-family: 'Norse', serif;
+}
+
+/* Right Side of the Page */
+#right-side-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+
+    width: 60%;
+    padding: 0px 24px;
+}
+
+
+/* hero text */
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1 0 35%;
+}
+
+.hero-text p {
+    flex-wrap: wrap;
+
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+
+/* sign-up form */
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 30%;
+}
+
+.sign-up-form p {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 18px 0px;
+}
+
+.sign-up-form form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    width: min(970px);
+    height: min(222px);
+}
+
+.sign-up-form form div {
+    flex: auto;
+    width: 480px;
+}
+
+.sign-up-form input {
+    width: 260px;
+}
+
+/* button and links */
+.button-links {
+    flex: 1 0 35%;
+}
+
+input[id="create-account"] {
+    font-size: 18px;
+    font-weight: 900;
+
+    color: #F5F5F5;
+    background-color: #6B8E23;
+
+    width: 240px;
+    height: 45px;
+
+    border-radius: 8px;
+    border: none;
+
 }
