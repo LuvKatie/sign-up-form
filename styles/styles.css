@@ -67,6 +67,10 @@ body {
     width: min(670px);
 
     margin-right: 240px;
+
+    font-family: sans-serif;
+    
+    color: #383838;
 }
 
 .sign-up-position,
@@ -92,7 +96,6 @@ body {
     flex-wrap: wrap;
 
     font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 
@@ -133,16 +136,63 @@ body {
 }
 
 .sign-up-form input {
+    position: relative;
+
     font-size: 16px;
     height: 28px;
     width: 240px;
     border: 1px solid lightgray;
     border-radius: 3px;
 
+    background-color: #fdfdff;
+
     padding: 8px 8px 6px 8px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.sign-up-form input + span {
+    position: relative;
+}
+
+.sign-up-form input + span::after {
+    position: absolute;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #4e4e4e;
+
+    letter-spacing: 0.1em;
+    
+    width: 200px;
+    
+    padding: 10px 10px;
+    top: -40px;
+    left: -250px;
+}
+
+.sign-up-form input[id="first-name"] + span::after {
+    content: "FIRST NAME";
+}
+
+.sign-up-form input[id="last-name"] + span::after {
+    content: "LAST NAME";
+}
+
+.sign-up-form input[id="email"] + span::after {
+    content: "EMAIL";
+}
+
+.sign-up-form input[id="phone-number"] + span::after {
+    content: "PHONE NUMBER";
+}
+
+.sign-up-form input[id="user-pw"] + span::after {
+    content: "PASSWORD";
+}
+
+.sign-up-form input[id="pw-confirm"] + span::after {
+    content: "CONFIRM PASSWORD";
 }
 
 /* button and links */
@@ -154,12 +204,28 @@ body {
     padding-top: 30px;
 }
 
+.button-links p {
+    padding-top: 12px;
+    font-size: 1.1em;
+
+    font-weight: 500;
+}
+
+.button-links a,
+.button-links a:hover,
+.button-links a:focus,
+.button-links a:active {
+    text-decoration: none;
+    color: #6B8E23;
+}
+
 input[id="create-account"] {
     font-size: 18px;
     font-weight: 900;
 
     color: #F5F5F5;
     background-color: #6B8E23;
+    box-shadow: 0 0 0.4em #58751c;
 
     width: 240px;
     height: 45px;
