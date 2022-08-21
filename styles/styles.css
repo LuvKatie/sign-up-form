@@ -52,7 +52,7 @@ body {
 }
 
 .logo-text {
-    color: #DCDCDC;
+    color: #F8F8FF;
     font-size: 78px;
     font-family: 'Norse', serif;
 }
@@ -111,8 +111,7 @@ body {
 
 .sign-up-form p {
     font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 550;
     padding: 16px 0px;
     margin: 0;
 }
@@ -200,6 +199,7 @@ body {
     flex: 1 0 auto;
 
     background-color: #F5F5F5;
+    box-shadow: inset 0 8px 6px -6px #A9A9A9;
 
     padding-top: 30px;
 }
@@ -216,7 +216,7 @@ body {
 .button-links a:focus,
 .button-links a:active {
     text-decoration: none;
-    color: #6B8E23;
+    color: #2F4F4F;
 }
 
 input[id="create-account"] {
@@ -224,8 +224,8 @@ input[id="create-account"] {
     font-weight: 900;
 
     color: #F5F5F5;
-    background-color: #6B8E23;
-    box-shadow: 0 0 0.4em #58751c;
+    background-color: #2F4F4F;
+    box-shadow: 0 0 0.4em #2F4F4F;
 
     width: 240px;
     height: 45px;
