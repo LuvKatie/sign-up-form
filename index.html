@@ -42,25 +42,25 @@
                 <form action="get">
                     <div>
                         <label for="first-name"></label>
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name" required placeholder=" " pattern="[a-zA-Z]{2,}">
                         <span></span>
                     </div>
                     
                     <div>
                         <label for="last-name"></label>
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="last-name" id="last-name" required placeholder=" " pattern="[a-zA-Z]+">
                         <span></span>
                     </div>
     
                     <div>
                         <label for="email"></label>
-                        <input type="email" name="user-email" id="email">
+                        <input type="email" name="user-email" id="email" placeholder=" " required pattern="[\w.-]{2,}@[\w-]{2,}\.[A-Za-z0-9]{2,3}">
                         <span></span>
                     </div>
     
                     <div>
                         <label for="phone-number"></label>
-                        <input type="tel" name="phone-num" id="phone-number">
+                        <input type="tel" name="phone-num" id="phone-number" minlength="10" placeholder=" " required pattern="\d{10}|\d{3}[-\s.]\d{3}[-\s.]\d{4}">
                         <span></span>
                     </div>
     

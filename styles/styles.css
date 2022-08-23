@@ -190,6 +190,7 @@ body {
     content: "EMAIL";
 }
 
+
 .sign-up-form input[id="phone-number"] + span::after {
     content: "PHONE NUMBER";
 }
@@ -200,6 +201,23 @@ body {
 
 .sign-up-form input[id="pw-confirm"] + span::after {
     content: "CONFIRM PASSWORD";
+}
+
+/* Client-Side validation */
+.sign-up-form input[required]:invalid:focus,
+.sign-up-form input[required]:invalid:not(:placeholder-shown){
+    border-color: crimson;
+    box-shadow: 0 0 10px crimson;
+    transition: 0.5s;
+    outline: none;
+}
+
+.sign-up-form input[required]:valid:focus,
+.sign-up-form input[required]:valid {
+    border-color: aquamarine;
+    box-shadow: 0 0 10px aquamarine;
+    transition: 0.5s;
+    outline: none;
 }
 
 /* button and links */
