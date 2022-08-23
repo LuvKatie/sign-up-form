@@ -143,12 +143,21 @@ body {
     border: 1px solid lightgray;
     border-radius: 3px;
 
+
     background-color: #fdfdff;
 
     padding: 8px 8px 6px 8px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.sign-up-form input:focus {
+    border: 1px solid blue;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    transition: 0.5s;
+    outline: none;
 }
 
 .sign-up-form input + span {
