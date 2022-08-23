@@ -153,7 +153,6 @@ body {
 }
 
 .sign-up-form input:focus {
-    border: 1px solid blue;
     border-color: #9ecaed;
     box-shadow: 0 0 10px #9ecaed;
     transition: 0.5s;
