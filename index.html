@@ -42,37 +42,37 @@
                 <form action="get">
                     <div>
                         <label for="first-name"></label>
-                        <input type="text" name="first-name" id="first-name" required placeholder=" " pattern="[a-zA-Z]{2,}">
+                        <input type="text" name="first-name" id="first-name" required placeholder="John" pattern="[a-zA-Z]{2,}">
                         <span></span>
                     </div>
                     
                     <div>
                         <label for="last-name"></label>
-                        <input type="text" name="last-name" id="last-name" required placeholder=" " pattern="[a-zA-Z]+">
+                        <input type="text" name="last-name" id="last-name" required placeholder="Smith" pattern="[a-zA-Z]+">
                         <span></span>
                     </div>
     
                     <div>
                         <label for="email"></label>
-                        <input type="email" name="user-email" id="email" placeholder=" " required pattern="[\w.-]{2,}@[\w-]{2,}\.[A-Za-z0-9]{2,3}">
+                        <input type="email" name="user-email" id="email" placeholder="jsmith98@gmail.com" required pattern="[\w.-]{2,}@[\w-]{2,}\.[A-Za-z0-9]{2,3}">
                         <span></span>
                     </div>
     
                     <div>
                         <label for="phone-number"></label>
-                        <input type="tel" name="phone-num" id="phone-number" minlength="10" placeholder=" " required pattern="\d{10}|\d{3}[-\s.]\d{3}[-\s.]\d{4}">
+                        <input type="tel" name="phone-num" id="phone-number" minlength="10" placeholder="000-000-0000" required pattern="\d{10}|\d{3}[-\s.]\d{3}[-\s.]\d{4}">
                         <span></span>
                     </div>
     
                     <div>
                         <label for="user-pw"></label>
-                        <input type="password" name="user-pw" id="user-pw">
+                        <input type="password" name="user-pw" id="user-pw" required placeholder=" ">
                         <span></span>
                     </div>
     
                     <div>
                         <label for="pw-confirm"></label>
-                        <input type="password" name="pw-confirm" id="pw-confirm">
+                        <input type="password" name="pw-confirm" id="pw-confirm" required placeholder=" ">
                         <span></span>
                     </div>
             </div>
@@ -90,6 +90,6 @@
     </div>
 
 
-
+<script src="scripts/script.js"></script>
 </body>
 </html>
